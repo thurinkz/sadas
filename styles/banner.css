@@ -1,0 +1,47 @@
+.banner {
+    background: var(--azul-degrade); /* Fundo com degradê azul */
+    color: var(--branco); /* Cor do texto */
+    text-align: center; /* Centralizar texto */
+    padding: 3em 2em; /* Aumentando o padding para mais espaço */
+    border-radius: 8px; /* Bordas arredondadas para um visual suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra para destaque */
+}
+
+.banner__titulo {
+    font-size: 24px; /* Aumentando o tamanho da fonte para maior impacto */
+    font-weight: 700; /* Negrito para destaque */
+    margin-bottom: 0.5em; /* Espaçamento inferior */
+}
+
+.banner__texto {
+    font-weight: 500; /* Peso da fonte */
+    margin: 1em 0; /* Espaçamento superior e inferior */
+    font-size: 16px; /* Tamanho de fonte otimizado */
+}
+
+.banner__pesquisa {
+    background-color: transparent; /* Fundo transparente */
+    border: 1px solid var(--branco); /* Borda branca */
+    color: var(--branco); /* Cor do texto */
+    border-radius: 24px; /* Bordas arredondadas */
+    padding: 1em; /* Padding interno */
+    width: 80%; /* Largura reduzida para melhor visualização */
+    max-width: 400px; /* Largura máxima para evitar excessos em telas grandes */
+    transition: border-color 0.3s ease; /* Transição suave para foco */
+}
+
+.banner__pesquisa:focus {
+    outline: none; /* Remover contorno padrão */
+    border-color: var(--laranja); /* Mudança de cor ao focar */
+}
+
+.banner__pesquisa::placeholder {
+    font-family: var(--fonte-principal); /* Fonte do placeholder */
+    font-size: 14px; /* Tamanho da fonte do placeholder */
+    font-weight: 400; /* Peso da fonte */
+    text-align: center; /* Centralizar texto */
+    color: var(--branco); /* Cor do texto do placeholder */
+    background: url("../img/Lupa.svg") no-repeat; /* Ícone de lupa */
+    background-position: 1em; /* Posição do ícone */
+    padding-left: 3em; /* Espaço para o ícone na esquerda */
+}

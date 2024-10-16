@@ -1,0 +1,61 @@
+/* Importando estilos de diferentes seções */
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+/* Definindo variáveis de cor e fonte */
+:root {
+    --cor-de-fundo: #EBECEE; /* Cor de fundo suave */
+    --branco: #FFFFFF; /* Branco puro */
+    --laranja: #EB9B00; /* Tom de laranja */
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%); /* Degradê azul */
+    --fonte-principal: "Poppins", sans-serif; /* Fonte principal com fallback */
+    --azul: #002F52; /* Azul profundo */
+}
+
+/* Estilizando o corpo da página */
+body {
+    background-color: var(--cor-de-fundo); /* Cor de fundo da página */
+    font-family: var(--fonte-principal); /* Fonte principal */
+    font-size: 16px; /* Tamanho de fonte padrão */
+    font-weight: 400; /* Peso da fonte */
+    line-height: 1.6; /* Aumentando a altura da linha para melhor legibilidade */
+    color: var(--azul); /* Cor do texto principal */
+}
+
+/* Estilos gerais para links */
+a {
+    color: var(--laranja); /* Cor dos links */
+    text-decoration: none; /* Remover sublinhado */
+    transition: color 0.3s ease; /* Transição suave para efeitos de hover */
+}
+
+a:hover {
+    color: var(--azul); /* Cor ao passar o mouse */
+}
+
+/* Imagens responsivas */
+img {
+    max-width: 100%; /* Garantindo que imagens não excedam a largura do contêiner */
+    height: auto; /* Mantendo proporção */
+}
+
+/* Adicionando estilizações gerais para seções */
+section {
+    padding: 20px; /* Espaçamento interno */
+    margin: 10px 0; /* Margem entre seções */
+    background-color: var(--branco); /* Fundo branco para seções */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Ajustes para cabeçalho e rodapé */
+header, footer {
+    background: var(--azul-degrade); /* Fundo degradê para cabeçalho e rodapé */
+    color: var(--branco); /* Cor do texto no cabeçalho e rodapé */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centralizar texto */
+}

@@ -1,0 +1,31 @@
+hr {
+    margin: 0; /* Remover margens do elemento hr */
+    border: 0; /* Remover bordas padrão */
+    height: 1px; /* Definir altura da linha */
+    background-color: var(--laranja); /* Cor da linha */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+}
+
+.rodapé {
+    background-color: var(--branco); /* Cor de fundo do rodapé */
+    padding: 2em 1em; /* Aumentar o padding para mais espaço interno */
+    text-align: center; /* Centralizar texto */
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil na parte superior */
+}
+
+.rodapé__texto {
+    color: var(--azul); /* Cor do texto do rodapé */
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    margin: 0.5em 0; /* Margem entre os textos */
+}
+
+.rodapé__link {
+    color: var(--laranja); /* Cor dos links no rodapé */
+    text-decoration: none; /* Remover sublinhado dos links */
+    transition: color 0.3s; /* Transição suave para hover */
+}
+
+.rodapé__link:hover {
+    color: var(--azul); /* Mudar a cor do link ao passar o mouse */
+}

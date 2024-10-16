@@ -1,0 +1,103 @@
+.carrossel__titulo {
+    color: var(--laranja); /* Cor do título */
+    background-color: var(--branco); /* Fundo branco */
+    text-align: center; /* Centralizar texto */
+    text-transform: uppercase; /* Transformar texto para maiúsculas */
+    font-size: 20px; /* Aumentando o tamanho da fonte para maior destaque */
+    font-weight: 700; /* Negrito */
+    padding: 1.5em 0 0.5em; /* Aumentando o padding superior */
+    border-radius: 8px; /* Bordas arredondadas para um visual suave */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.swiper-slide img {
+    width: 100%; /* Imagens ocupam 100% da largura do slide */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: flex; /* Tornar botões visíveis */
+    justify-content: center; /* Centralizar botões */
+    align-items: center; /* Alinhar verticalmente */
+    width: 40px; /* Largura dos botões */
+    height: 40px; /* Altura dos botões */
+    background-color: var(--laranja); /* Fundo dos botões */
+    border-radius: 50%; /* Bordas arredondadas para formato circular */
+    color: var(--branco); /* Cor do ícone */
+    transition: background-color 0.3s; /* Transição suave para cor de fundo */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: #d88f00; /* Cor ao passar o mouse */
+}
+
+.swiper-pagination {
+    position: relative; /* Posição relativa para o controle de paginação */
+    margin: 0.5em 0; /* Margem para o controle */
+}
+
+.card {
+    background: var(--branco); /* Fundo branco */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 1em; /* Margem externa */
+    padding: 1.5em; /* Padding interno aumentado */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição para hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+.card__descrição {
+    display: flex; /* Flexbox para layout */
+    justify-content: space-between; /* Justificação do espaço entre itens */
+    margin-bottom: 0.75em; /* Aumento da margem inferior */
+}
+
+.card__botões {
+    display: flex; /* Flexbox para botões */
+    justify-content: space-between; /* Justificação do espaço entre botões */
+}
+
+.botões {
+    display: flex; /* Flexbox para lista de botões */
+}
+
+.descrição__titulo {
+    color: var(--laranja); /* Cor do título da descrição */
+    font-weight: 700; /* Negrito */
+}
+
+.descrição__titulo-livro {
+    color: var(--azul); /* Cor do título do livro */
+    font-size: 20px; /* Aumentando o tamanho da fonte para maior destaque */
+    font-weight: 700; /* Negrito */
+    margin: 0.5em 0; /* Margens superior e inferior */
+}
+
+.descrição__texto {
+    font-size: 16px; /* Aumentando o tamanho da fonte para legibilidade */
+    color: #555; /* Cor do texto mais suave */
+}
+
+.botões__ancora {
+    background-color: var(--laranja); /* Fundo laranja */
+    padding: 1em 2.2em; /* Padding interno */
+    color: var(--branco); /* Cor do texto */
+    font-weight: 700; /* Negrito */
+    text-decoration: none; /* Remover decoração do texto */
+    border-radius: 24px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave para fundo */
+}
+
+.botões__ancora:hover {
+    background-color: #d88f00; /* Cor ao passar o mouse */
+}
+
+.botões__item {
+    margin: 0 0.5em; /* Margem lateral */
+}

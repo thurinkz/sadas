@@ -1,0 +1,74 @@
+.cabeçalho {
+    background-color: var(--branco); /* Cor de fundo do cabeçalho */
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: space-between; /* Espaçamento entre itens */
+    align-items: center; /* Alinhamento vertical */
+    padding: 1em; /* Padding para espaçamento interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+    position: relative; /* Posição relativa para o menu */
+}
+
+.cabeçalho__menu-hamburguer {
+    width: 30px; /* Largura do ícone do menu */
+    height: 30px; /* Altura do ícone do menu */
+    display: inline-block; /* Exibição inline */
+    background-image: url("../img/Menu.svg"); /* Imagem de fundo do menu */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-position: center; /* Centralizar imagem */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: transform 0.3s; /* Transição suave ao interagir */
+}
+
+.cabeçalho__menu-hamburguer:hover {
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+}
+
+.container {
+    display: flex; /* Flexbox para o container */
+    align-items: center; /* Alinhamento vertical */
+}
+
+.container__imagem {
+    padding: 1em; /* Padding para as imagens do cabeçalho */
+}
+
+.lista-menu {
+    display: none; /* Inicialmente ocultar o menu */
+    position: absolute; /* Posição absoluta para o menu */
+    top: 100%; /* Colocar o menu abaixo do cabeçalho */
+    width: 60vw; /* Largura do menu */
+    background-color: var(--branco); /* Cor de fundo do menu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para o menu */
+    z-index: 10; /* Aumentar a profundidade */
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block; /* Mostrar menu ao clicar */
+}
+
+.lista-menu__titulo {
+    padding: 1em; /* Padding para o título do menu */
+    color: var(--laranja); /* Cor do título */
+    font-weight: 700; /* Peso da fonte */
+}
+
+.lista-menu__item {
+    padding: 1em; /* Padding para os itens do menu */
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade); /* Gradiente de fundo para os links */
+    -webkit-background-clip: text; /* Clipping do fundo */
+    -webkit-text-fill-color: transparent; /* Texto transparente */
+    background-clip: text; /* Clipping do fundo */
+    text-transform: uppercase; /* Transformar texto para maiúsculas */
+    transition: color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.lista-menu__link:hover {
+    color: var(--laranja); /* Mudar a cor ao passar o mouse */
+}
+
+.container__botao {
+    display: none; /* Ocultar botão do menu padrão */
+}

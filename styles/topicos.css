@@ -1,0 +1,42 @@
+.tópicos {
+    background: var(--azul-degrade); /* Gradiente de fundo */
+    text-align: center; /* Alinhamento do texto ao centro */
+    padding: 2em 0; /* Aumentar o padding para mais espaço */
+    border-radius: 10px; /* Bordas arredondadas para suavizar o visual */
+}
+
+.tópicos__titulo {
+    color: var(--branco); /* Cor do título */
+    font-weight: 500; /* Aumentar o peso da fonte para destaque */
+    margin-bottom: 1.5em; /* Maior espaço abaixo do título */
+    font-size: 24px; /* Tamanho da fonte do título */
+}
+
+.tópicos__lista {
+    display: flex; /* Usar flexbox para layout */
+    flex-wrap: wrap; /* Permitir que os itens se movam para a próxima linha */
+    justify-content: center; /* Centralizar os itens */
+    margin: 0; /* Remover margens */
+    padding: 0; /* Remover padding */
+}
+
+.tópicos__item {
+    margin: 1em; /* Ajustar margens entre os itens */
+    flex: 1 1 150px; /* Fazer os itens crescerem e ocuparem espaço */
+}
+
+.tópicos__link {
+    color: var(--branco); /* Cor do texto do link */
+    padding: 1em; /* Espaçamento interno do link */
+    background-color: var(--laranja); /* Cor de fundo do link */
+    text-decoration: none; /* Remover sublinhado */
+    font-size: 16px; /* Aumentar o tamanho da fonte para melhor legibilidade */
+    font-weight: 700; /* Manter peso em negrito */
+    border-radius: 5px; /* Bordas arredondadas para o link */
+    transition: background-color 0.3s; /* Transição suave na cor de fundo */
+}
+
+.tópicos__link:hover {
+    background-color: var(--branco); /* Mudar a cor de fundo ao passar o mouse */
+    color: var(--azul); /* Mudar a cor do texto ao passar o mouse */
+}

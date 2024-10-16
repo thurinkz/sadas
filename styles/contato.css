@@ -1,0 +1,50 @@
+.contato {
+    background-color: var(--branco); /* Cor de fundo */
+    padding: 2em; /* Aumentando o padding para mais espaço interno */
+    border-radius: 10px; /* Bordas arredondadas para suavizar o visual */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor */
+}
+
+.contato__titulo,
+.contato__texto {
+    background: var(--azul-degrade); /* Gradiente de fundo */
+    -webkit-background-clip: text; /* Clipping do fundo */
+    -webkit-text-fill-color: transparent; /* Texto transparente */
+    background-clip: text; /* Clipping do fundo */
+    font-family: var(--fonte-principal); /* Fonte principal */
+}
+
+.contato__titulo {
+    font-size: 24px; /* Aumentando o tamanho do título para destaque */
+    font-weight: 600; /* Peso da fonte um pouco mais forte */
+    margin-bottom: 0.5em; /* Margem inferior para espaçamento */
+}
+
+.contato__texto {
+    font-weight: 400; /* Peso da fonte ajustado */
+    margin: 0.5em 0 1em; /* Margem para espaçamento adequado */
+    line-height: 1.5; /* Aumentando o espaçamento entre linhas */
+    color: #333; /* Cor do texto mais escura para melhor legibilidade */
+}
+
+.contato__email {
+    padding: 1em; /* Padding interno */
+    border: 1px solid var(--azul); /* Borda azul */
+    border-radius: 24px; /* Bordas arredondadas */
+    width: 90%; /* Largura do campo de email */
+    color: var(--azul); /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte do input */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+.contato__email:focus {
+    border-color: var(--laranja); /* Mudando a cor da borda ao focar */
+    outline: none; /* Remover contorno padrão */
+}
+
+.contato__email::placeholder {
+    font-family: var(--fonte-principal); /* Fonte do placeholder */
+    color: #999; /* Cor do placeholder mais suave */
+    background: url("../img/Email.svg") no-repeat 5%; /* Ícone de email */
+    padding-left: 2em; /* Padding esquerdo para espaçamento */
+}

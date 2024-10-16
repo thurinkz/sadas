@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/Logo.svg" alt="Logo da Biblioteca Digital">
+            </div>
+            <nav class="navbar">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">☰</label>
+                <ul class="menu">
+                    <li><a href="#">Programação</a></li>
+                    <li><a href="#">Front-end</a></li>
+                    <li><a href="#">Infraestrutura</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Design & UX</a></li>
+                </ul>
+            </nav>
+            <div class="user-icons">
+                <a href="#"><img src="img/Favoritos.svg" alt="Favoritos"></a>
+                <a href="#"><img src="img/Compras.svg" alt="Compras"></a>
+                <a href="#"><img src="img/Usuario.svg" alt="Perfil"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Descubra sua próxima leitura!</h1>
+            <p>Explore nossa coleção de livros e impulsione seu desenvolvimento pessoal.</p>
+            <input type="search" placeholder="Busque livros..." class="search-bar">
+        </section>
+
+        <section class="carousel-section">
+            <h2>Novidades em destaque</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/Apachekafka.svg" alt="Livro sobre Apache Kafka"></div>
+                    <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança"></div>
+                    <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre JavaScript"></div>
+                    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia Front-end"></div>
+                    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+                    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section class="recommended">
+            <h2>Recomendação do Mês</h2>
+            <div class="recommendation-card">
+                <img src="img/Angular.svg" alt="Livro Angular" class="book-image">
+                <div class="description">
+                    <h3>Angular 11 e Firebase</h3>
+                    <p>Construa aplicações incríveis com a plataforma do Google.</p>
+                </div>
+                <div class="buttons">
+                    <button class="btn-favorite"><img src="img/Favoritos.svg" alt="Favoritar"></button>
+                    <button class="btn-cart"><img src="img/Compras.svg" alt="Adicionar ao Carrinho"></button>
+                </div>
+                <a href="#" class="btn-more-info">Saiba mais</a>
+            </div>
+        </section>
+
+        <section class="bestsellers">
+            <h2>Mais Vendidos</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
+                    <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança"></div>
+                    <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre JavaScript"></div>
+                    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia Front-end"></div>
+                    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+                    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section class="recent-topics">
+            <h2>Tópicos Recentemente Visitados</h2>
+            <ul class="topic-list">
+                <li><a href="#">Android</a></li>
+                <li><a href="#">Marketing Digital</a></li>
+                <li><a href="#">Agile</a></li>
+                <li><a href="#">Startups</a></li>
+                <li><a href="#">HTML & CSS</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Programação Orientada a Objetos</a></li>
+                <li><a href="#">Java</a></li>
+            </ul>
+        </section>
+
+        <section class="newsletter">
+            <h2>Inscreva-se para novidades!</h2>
+            <p>Receba atualizações sobre e-books, lançamentos e promoções.</p>
+            <input type="email" placeholder="Seu e-mail" class="email-input">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2>Grupo Alura</h2>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
